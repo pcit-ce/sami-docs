@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PCIT\PCIT | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PCIT_PCIT" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../PCIT.html">PCIT</a></li><li class="backslash">\</li><li>PCIT</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PCIT
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PCIT</strong>        extends <abbr title="Pimple\Container">Container</abbr>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>核心方法 注入类（依赖），之后通过调用属性或方法，获取类.</p>            <p>$container->register();</p>
+
+<p>$container['a'] = new A();</p>
+
+<p>$a = $container['a'];</p>                    </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_providers">
+                                        protected                                        
+                </td>
+                <td>$providers</td>
+                <td class="last">服务提供器数组.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_activity_events">
+                                                                                <a href="../PCIT/GitHub/Service/Activity/EventsClient.html"><abbr title="PCIT\GitHub\Service\Activity\EventsClient">EventsClient</abbr></a>
+                </td>
+                <td>$activity_events</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_activity_feeds">
+                                                                                <a href="../PCIT/GitHub/Service/Activity/FeedsClient.html"><abbr title="PCIT\GitHub\Service\Activity\FeedsClient">FeedsClient</abbr></a>
+                </td>
+                <td>$activity_feeds</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_activity_notifications">
+                                                                                <a href="../PCIT/GitHub/Service/Activity/NotificationsClient.html"><abbr title="PCIT\GitHub\Service\Activity\NotificationsClient">NotificationsClient</abbr></a>
+                </td>
+                <td>$activity_notifications</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_activity_starring">
+                                                                                <a href="../PCIT/GitHub/Service/Activity/StarringClient.html"><abbr title="PCIT\GitHub\Service\Activity\StarringClient">StarringClient</abbr></a>
+                </td>
+                <td>$activity_starring</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_activity_watching">
+                                                                                <a href="../PCIT/GitHub/Service/Activity/WatchingClient.html"><abbr title="PCIT\GitHub\Service\Activity\WatchingClient">WatchingClient</abbr></a>
+                </td>
+                <td>$activity_watching</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_authorizations">
+                                                                                <a href="../PCIT/GitHub/Service/Authorizations/Client.html"><abbr title="PCIT\GitHub\Service\Authorizations\Client">Client</abbr></a>
+                </td>
+                <td>$authorizations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_data">
+                                                                                <a href="../PCIT/GitHub/Service/Data/Client.html"><abbr title="PCIT\GitHub\Service\Data\Client">Client</abbr></a>
+                </td>
+                <td>$data</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_deployment">
+                                                                                <a href="../PCIT/GitHub/Service/Deployment/Client.html"><abbr title="PCIT\GitHub\Service\Deployment\Client">Client</abbr></a>
+                </td>
+                <td>$deployment</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_gist">
+                                                                                <a href="../PCIT/GitHub/Service/Gist/Client.html"><abbr title="PCIT\GitHub\Service\Gist\Client">Client</abbr></a>
+                </td>
+                <td>$gist</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_gist_comments">
+                                                                                <a href="../PCIT/GitHub/Service/Gist/CommentsClient.html"><abbr title="PCIT\GitHub\Service\Gist\CommentsClient">CommentsClient</abbr></a>
+                </td>
+                <td>$gist_comments</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_github_apps_installations">
+                                                                                <a href="../PCIT/GitHub/Service/GitHubApp/Client.html"><abbr title="PCIT\GitHub\Service\GitHubApp\Client">Client</abbr></a>
+                </td>
+                <td>$github_apps_installations</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_oauth">
+                                                                                <a href="../PCIT/GitHub/Service/OAuth/Client.html"><abbr title="PCIT\GitHub\Service\OAuth\Client">Client</abbr></a>
+                </td>
+                <td>$oauth</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_issue_assignees">
+                                                                                <a href="../PCIT/GitHub/Service/Issue/AssigneesClient.html"><abbr title="PCIT\GitHub\Service\Issue\AssigneesClient">AssigneesClient</abbr></a>
+                </td>
+                <td>$issue_assignees</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_issue_comments">
+                                                                                <a href="../PCIT/GitHub/Service/Issue/CommentsClient.html"><abbr title="PCIT\GitHub\Service\Issue\CommentsClient">CommentsClient</abbr></a>
+                </td>
+                <td>$issue_comments</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_issue_events">
+                                                                                <a href="../PCIT/GitHub/Service/Issue/EventsClient.html"><abbr title="PCIT\GitHub\Service\Issue\EventsClient">EventsClient</abbr></a>
+                </td>
+                <td>$issue_events</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_issue">
+                                                                                <a href="../PCIT/GitHub/Service/Issue/Client.html"><abbr title="PCIT\GitHub\Service\Issue\Client">Client</abbr></a>
+                </td>
+                <td>$issue</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_issue_labels">
+                                                                                <a href="../PCIT/GitHub/Service/Issue/LabelsClient.html"><abbr title="PCIT\GitHub\Service\Issue\LabelsClient">LabelsClient</abbr></a>
+                </td>
+                <td>$issue_labels</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_issue_milestones">
+                                                                                <a href="../PCIT/GitHub/Service/Issue/MilestonesClient.html"><abbr title="PCIT\GitHub\Service\Issue\MilestonesClient">MilestonesClient</abbr></a>
+                </td>
+                <td>$issue_milestones</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_miscellaneous">
+                                                                                <a href="../PCIT/GitHub/Service/Miscellaneous/Client.html"><abbr title="PCIT\GitHub\Service\Miscellaneous\Client">Client</abbr></a>
+                </td>
+                <td>$miscellaneous</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_orgs">
+                                                                                <a href="../PCIT/GitHub/Service/Organizations/Client.html"><abbr title="PCIT\GitHub\Service\Organizations\Client">Client</abbr></a>
+                </td>
+                <td>$orgs</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_branches">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/BranchesClient.html"><abbr title="PCIT\GitHub\Service\Repositories\BranchesClient">BranchesClient</abbr></a>
+                </td>
+                <td>$repo_branches</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_collaborators">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/CollaboratorsClient.html"><abbr title="PCIT\GitHub\Service\Repositories\CollaboratorsClient">CollaboratorsClient</abbr></a>
+                </td>
+                <td>$repo_collaborators</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_commits">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/CommitsClient.html"><abbr title="PCIT\GitHub\Service\Repositories\CommitsClient">CommitsClient</abbr></a>
+                </td>
+                <td>$repo_commits</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_community">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/CommunityClient.html"><abbr title="PCIT\GitHub\Service\Repositories\CommunityClient">CommunityClient</abbr></a>
+                </td>
+                <td>$repo_community</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_contents">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/ContentsClient.html"><abbr title="PCIT\GitHub\Service\Repositories\ContentsClient">ContentsClient</abbr></a>
+                </td>
+                <td>$repo_contents</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_merging">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/MergingClient.html"><abbr title="PCIT\GitHub\Service\Repositories\MergingClient">MergingClient</abbr></a>
+                </td>
+                <td>$repo_merging</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_releases">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/ReleasesClient.html"><abbr title="PCIT\GitHub\Service\Repositories\ReleasesClient">ReleasesClient</abbr></a>
+                </td>
+                <td>$repo_releases</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_status">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/StatusClient.html"><abbr title="PCIT\GitHub\Service\Repositories\StatusClient">StatusClient</abbr></a>
+                </td>
+                <td>$repo_status</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_repo_webhooks">
+                                                                                <a href="../PCIT/GitHub/Service/Repositories/WebhooksClient.html"><abbr title="PCIT\GitHub\Service\Repositories\WebhooksClient">WebhooksClient</abbr></a>
+                </td>
+                <td>$repo_webhooks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_mail">
+                                                                                <abbr title="PHPMailer\PHPMailer\PHPMailer">PHPMailer</abbr>
+                </td>
+                <td>$mail</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pull_request">
+                                                                                <a href="../PCIT/GitHub/Service/PullRequest/Client.html"><abbr title="PCIT\GitHub\Service\PullRequest\Client">Client</abbr></a>
+                </td>
+                <td>$pull_request</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_webhooks">
+                                                                                <a href="../PCIT/GitHub/Service/Webhooks/Client.html"><abbr title="PCIT\GitHub\Service\Webhooks\Client">Client</abbr></a>
+                </td>
+                <td>$webhooks</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_runner">
+                                                                                <a href="../PCIT/Runner/Client.html"><abbr title="PCIT\Runner\Client">Client</abbr></a>
+                </td>
+                <td>$runner</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_runner_agent_docker">
+                                                                                <abbr title="PCIT\Runner\Agent\Docker\DockerHandler">DockerHandler</abbr>
+                </td>
+                <td>$runner_agent_docker</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tencent_ai">
+                                                                                <abbr title="TencentAI\TencentAI">TencentAI</abbr>
+                </td>
+                <td>$tencent_ai</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_user_basic_info">
+                                                                                <a href="../PCIT/GitHub/Service/Users/Client.html"><abbr title="PCIT\GitHub\Service\Users\Client">Client</abbr></a>
+                </td>
+                <td>$user_basic_info</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_check_run">
+                                                                                <a href="../PCIT/GitHub/Service/Checks/Run.html"><abbr title="PCIT\GitHub\Service\Checks\Run">Run</abbr></a>
+                </td>
+                <td>$check_run</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_check_suites">
+                                                                                <a href="../PCIT/GitHub/Service/Checks/Suites.html"><abbr title="PCIT\GitHub\Service\Checks\Suites">Suites</abbr></a>
+                </td>
+                <td>$check_suites</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_curl">
+                                                                                <abbr title="Curl\Curl">Curl</abbr>
+                </td>
+                <td>$curl</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_docker">
+                                                                                <abbr title="Docker\Docker">Docker</abbr>
+                </td>
+                <td>$docker</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wechat">
+                                                                                <abbr title="WeChat\WeChat">WeChat</abbr>
+                </td>
+                <td>$wechat</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_wechat_template_message">
+                                                                                <abbr title="PCIT\Service\Kernel\WeChat\Template\WeChatClient">WeChatClient</abbr>
+                </td>
+                <td>$wechat_template_message</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $config = [], string $git_type = &#039;github&#039;, string $accessToken = null)
+        
+                                            <p>PCIT constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setConfig">setConfig</a>($config, $git_type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setGitType">setGitType</a>($git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setAccessToken">setAccessToken</a>(string|null $accessToken = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>($name)
+        
+                                            <p>通过调用属性，获取对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___call">__call</a>($name, $arguments)
+        
+                                            <p>通过调用方法，获取对象</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 113</div>
+        <code>                    
+    <strong>__construct</strong>(array $config = [], string $git_type = &#039;github&#039;, string $accessToken = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>PCIT constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accessToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setConfig">
+        <div class="location">at         line 133</div>
+        <code>                    void
+    <strong>setConfig</strong>($config, $git_type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setGitType">
+        <div class="location">at         line 138</div>
+        <code>                    
+    <strong>setGitType</strong>($git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setAccessToken">
+        <div class="location">at         line 147</div>
+        <code>                    
+    <strong>setAccessToken</strong>(string|null $accessToken = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|null</td>
+                <td>$accessToken</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">at         line 196</div>
+        <code>                    mixed
+    <strong>__get</strong>($name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过调用属性，获取对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___call">
+        <div class="location">at         line 216</div>
+        <code>                    mixed
+    <strong>__call</strong>($name, $arguments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过调用方法，获取对象</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$arguments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

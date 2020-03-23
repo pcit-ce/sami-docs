@@ -1,0 +1,2042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>Request | API</title>
+
+            <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/sami.css">
+        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/typeahead.min.js"></script>
+        <script src="sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:Request" data-root-path="">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="classes.html">Classes</a></li>
+                                            <li><a href="namespaces.html">Namespaces</a></li>
+                                        <li><a href="interfaces.html">Interfaces</a></li>
+                    <li><a href="traits.html">Traits</a></li>
+                    <li><a href="doc-index.html">Index</a></li>
+                    <li><a href="search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                            <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Request
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Request</strong>        extends <a href="PCIT/Framework/Support/Facades/Request.html"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFacadeAccessor">getFacadeAccessor</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getFacadeAccessor"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___callStatic">__callStatic</a>($name, $args)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Facade.html#method___callStatic"><abbr title="PCIT\Framework\Support\Facades\Facade">Facade</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>($key, $default = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_get"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSession">getSession</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getSession"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasPreviousSession">hasPreviousSession</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_hasPreviousSession"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasSession">hasSession</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_hasSession"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientIps">getClientIps</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getClientIps"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getClientIp">getClientIp</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getClientIp"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScriptName">getScriptName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getScriptName"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPathInfo">getPathInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getPathInfo"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBasePath">getBasePath</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getBasePath"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBaseUrl">getBaseUrl</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getBaseUrl"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getScheme">getScheme</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getScheme"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPort">getPort</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getPort"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUser">getUser</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getUser"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPassword">getPassword</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getPassword"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUserInfo">getUserInfo</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getUserInfo"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHttpHost">getHttpHost</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getHttpHost"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestUri">getRequestUri</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getRequestUri"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getSchemeAndHttpHost">getSchemeAndHttpHost</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getSchemeAndHttpHost"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUri">getUri</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getUri"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getUriForPath">getUriForPath</a>($path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getUriForPath"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRelativeUriForPath">getRelativeUriForPath</a>($path)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getRelativeUriForPath"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getQueryString">getQueryString</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getQueryString"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isSecure">isSecure</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isSecure"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getHost">getHost</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getHost"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMethod">getMethod</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getMethod"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRealMethod">getRealMethod</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getRealMethod"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getMimeType">getMimeType</a>($format)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getMimeType"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFormat">getFormat</a>($mimeType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getFormat"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getRequestFormat">getRequestFormat</a>($default = &#039;html&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getRequestFormat"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContentType">getContentType</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getContentType"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDefaultLocale">getDefaultLocale</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getDefaultLocale"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLocale">getLocale</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getLocale"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMethod">isMethod</a>($method)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isMethod"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMethodSafe">isMethodSafe</a>($andCacheable = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isMethodSafe"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMethodCacheable">isMethodCacheable</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isMethodCacheable"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getContent">getContent</a>($asResource = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getContent"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getETags">getETags</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getETags"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNoCache">isNoCache</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isNoCache"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getPreferredLanguage">getPreferredLanguage</a>(array  $locales = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getPreferredLanguage"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLanguages">getLanguages</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getLanguages"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCharsets">getCharsets</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getCharsets"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getEncodings">getEncodings</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getEncodings"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAcceptableContentTypes">getAcceptableContentTypes</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_getAcceptableContentTypes"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isXmlHttpRequest">isXmlHttpRequest</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isXmlHttpRequest"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isFromTrustedProxy">isFromTrustedProxy</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="PCIT/Framework/Support/Facades/Request.html#method_isFromTrustedProxy"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a></small></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_getFacadeAccessor">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getFacadeAccessor"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 56</div>
+        <code>        static            
+    <strong>getFacadeAccessor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___callStatic">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Facade.html#method___callStatic"><abbr title="PCIT\Framework\Support\Facades\Facade">Facade</abbr></a> at         line 11</div>
+        <code>        static            
+    <strong>__callStatic</strong>($name, $args)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_get"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>get</strong>($key, $default = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$key</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSession">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getSession"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getSession</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasPreviousSession">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_hasPreviousSession"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>hasPreviousSession</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasSession">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_hasSession"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>hasSession</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientIps">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getClientIps"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getClientIps</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getClientIp">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getClientIp"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getClientIp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScriptName">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getScriptName"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getScriptName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPathInfo">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getPathInfo"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getPathInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBasePath">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getBasePath"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getBasePath</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBaseUrl">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getBaseUrl"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getBaseUrl</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getScheme">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getScheme"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getScheme</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPort">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getPort"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getPort</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUser">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getUser"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getUser</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPassword">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getPassword"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getPassword</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUserInfo">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getUserInfo"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getUserInfo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHttpHost">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getHttpHost"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getHttpHost</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestUri">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getRequestUri"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getRequestUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getSchemeAndHttpHost">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getSchemeAndHttpHost"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getSchemeAndHttpHost</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUri">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getUri"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getUri</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getUriForPath">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getUriForPath"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getUriForPath</strong>($path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRelativeUriForPath">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getRelativeUriForPath"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getRelativeUriForPath</strong>($path)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQueryString">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getQueryString"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getQueryString</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isSecure">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isSecure"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isSecure</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getHost">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getHost"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getHost</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMethod">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getMethod"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRealMethod">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getRealMethod"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getRealMethod</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getMimeType">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getMimeType"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getMimeType</strong>($format)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFormat">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getFormat"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getFormat</strong>($mimeType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$mimeType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getRequestFormat">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getRequestFormat"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getRequestFormat</strong>($default = &#039;html&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$default</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContentType">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getContentType"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getContentType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDefaultLocale">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getDefaultLocale"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getDefaultLocale</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLocale">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getLocale"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getLocale</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMethod">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isMethod"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isMethod</strong>($method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMethodSafe">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isMethodSafe"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isMethodSafe</strong>($andCacheable = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$andCacheable</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMethodCacheable">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isMethodCacheable"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isMethodCacheable</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getContent">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getContent"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getContent</strong>($asResource = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$asResource</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getETags">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getETags"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getETags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isNoCache">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isNoCache"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isNoCache</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getPreferredLanguage">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getPreferredLanguage"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getPreferredLanguage</strong>(array  $locales = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array </td>
+                <td>$locales</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLanguages">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getLanguages"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getLanguages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCharsets">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getCharsets"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getCharsets</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getEncodings">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getEncodings"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getEncodings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAcceptableContentTypes">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_getAcceptableContentTypes"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>getAcceptableContentTypes</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isXmlHttpRequest">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isXmlHttpRequest"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isXmlHttpRequest</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isFromTrustedProxy">
+        <div class="location">in <a href="PCIT/Framework/Support/Facades/Request.html#method_isFromTrustedProxy"><abbr title="PCIT\Framework\Support\Facades\Request">Request</abbr></a> at         line 54</div>
+        <code>                    static
+    <strong>isFromTrustedProxy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>static</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

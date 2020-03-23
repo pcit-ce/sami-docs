@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>App\Setting | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/sami.css">
+        <script src="../js/jquery-1.11.1.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script src="../js/typeahead.min.js"></script>
+        <script src="../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:App_Setting" data-root-path="../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../classes.html">Classes</a></li>
+                                            <li><a href="../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../interfaces.html">Interfaces</a></li>
+                    <li><a href="../traits.html">Traits</a></li>
+                    <li><a href="../doc-index.html">Index</a></li>
+                    <li><a href="../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../App.html">App</a></li><li class="backslash">\</li><li>Setting</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Setting
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Setting</strong>        extends <a href="../PCIT/Framework/Support/Model.html"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a>
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>CREATED_AT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>UPDATED_AT</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_table">
+                    static                    protected                                        
+                </td>
+                <td>$table</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_set_array">
+                    static                    protected                                        
+                </td>
+                <td>$set_array</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#property_set_array"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_primaryKey">
+                    static                    protected                                        
+                </td>
+                <td>$primaryKey</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#property_primaryKey"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_incrementing">
+                    static                    protected                                        
+                </td>
+                <td>$incrementing</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#property_incrementing"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_keyType">
+                    static                    protected                                        
+                </td>
+                <td>$keyType</td>
+                <td class="last">如果主键不是一个整数，则应该在模型上设置 string.</td>
+                <td><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#property_keyType"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_timestamps">
+                    static                    protected                                        
+                </td>
+                <td>$timestamps</td>
+                <td class="last">默认数据表中存在 created_at 和 updated_at 这两个字段.</td>
+                <td><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#property_timestamps"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_connection">
+                    static                    protected                                        
+                </td>
+                <td>$connection</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#property_connection"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_setting_array">
+                    static                    protected                                        
+                </td>
+                <td>$setting_array</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_chunk">chunk</a>(int $count, <a target="_blank" href="http://php.net/Closure">Closure</a> $closer)
+        
+                                            <p>结果分块.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_chunk"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all">all</a>()
+        
+                                            <p>取得所有数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_all"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int|array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_find">find</a>(int $table_primary_key_id)
+        
+                                            <p>通过主键查找数据.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_find"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_first">first</a>()
+        
+                                            <p>取回符合查询限制的第一个模型 .</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_first"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findOrFail">findOrFail</a>(int|array $table_primary_key_id)
+        
+                                            <p>通过主键查找数据，找不到则抛出异常.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_findOrFail"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_firstOrFail">firstOrFail</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_firstOrFail"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTableName">getTableName</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_getTableName"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_save">save</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_save"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___set">__set</a>($name, $value)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method___set"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastKeyId">getLastKeyId</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_getLastKeyId"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_destroy">destroy</a>(int|array $primaryKeyValue)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../PCIT/Framework/Support/Model.html#method_destroy"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_list">list</a>(int $rid, string $git_type = &#039;github&#039;)
+        
+                                            <p>返回某仓库的设置列表.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(int $rid, string $setting_name, string $git_type = &#039;github&#039;)
+        
+                                            <p>返回某个设置的值</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(int $rid, string $setting_name, string $setting_value, string $git_type = &#039;github&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_chunk">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_chunk"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 39</div>
+        <code>        static            void
+    <strong>chunk</strong>(int $count, <a target="_blank" href="http://php.net/Closure">Closure</a> $closer)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>结果分块.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$count</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$closer</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_all"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 50</div>
+        <code>        static            array|string
+    <strong>all</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取得所有数据.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_find">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_find"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 68</div>
+        <code>        static            int|array
+    <strong>find</strong>(int $table_primary_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找数据.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$table_primary_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_first">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_first"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 86</div>
+        <code>        static            void
+    <strong>first</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>取回符合查询限制的第一个模型 .</p>                    <p>..</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findOrFail">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_findOrFail"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 99</div>
+        <code>        static            array|int
+    <strong>findOrFail</strong>(int|array $table_primary_key_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>通过主键查找数据，找不到则抛出异常.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|array</td>
+                <td>$table_primary_key_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_firstOrFail">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_firstOrFail"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 110</div>
+        <code>        static            void
+    <strong>firstOrFail</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTableName">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_getTableName"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 117</div>
+        <code>        static            string|null
+    <strong>getTableName</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_save">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_save"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 132</div>
+        <code>                    void
+    <strong>save</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___set">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method___set"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 145</div>
+        <code>                    void
+    <strong>__set</strong>($name, $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastKeyId">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_getLastKeyId"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 157</div>
+        <code>        static            array|string
+    <strong>getLastKeyId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_destroy">
+        <div class="location">in <a href="../PCIT/Framework/Support/Model.html#method_destroy"><abbr title="PCIT\Framework\Support\Model">Model</abbr></a> at         line 167</div>
+        <code>        static            void
+    <strong>destroy</strong>(int|array $primaryKeyValue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int|array</td>
+                <td>$primaryKeyValue</td>
+                <td>通过主键删除数据</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_list">
+        <div class="location">at         line 25</div>
+        <code>        static            array
+    <strong>list</strong>(int $rid, string $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回某仓库的设置列表.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 47</div>
+        <code>        static            string
+    <strong>get</strong>(int $rid, string $setting_name, string $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>返回某个设置的值</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$setting_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 63</div>
+        <code>        static            int
+    <strong>update</strong>(int $rid, string $setting_name, string $setting_value, string $git_type = &#039;github&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$rid</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$setting_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$setting_value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$git_type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

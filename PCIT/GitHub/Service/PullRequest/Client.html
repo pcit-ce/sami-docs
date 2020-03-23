@@ -1,0 +1,1992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>PCIT\GitHub\Service\PullRequest\Client | API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:PCIT_GitHub_Service_PullRequest_Client" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../PCIT.html">PCIT</a></li><li class="backslash">\</li><li><a href="../../../../PCIT/GitHub.html">GitHub</a></li><li class="backslash">\</li><li><a href="../../../../PCIT/GitHub/Service.html">Service</a></li><li class="backslash">\</li><li><a href="../../../../PCIT/GitHub/Service/PullRequest.html">PullRequest</a></li><li class="backslash">\</li><li>Client</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Client
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Client</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Class GitHubClient.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../PCIT/GitHub/Service/CICommon.html"><abbr title="PCIT\GitHub\Service\CICommon">CICommon</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_curl">
+                                        protected                                        
+                </td>
+                <td>$curl</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PCIT/GitHub/Service/CICommon.html#property_curl"><abbr title="PCIT\GitHub\Service\CICommon">CICommon</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_api_url">
+                                        protected                                        
+                </td>
+                <td>$api_url</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../PCIT/GitHub/Service/CICommon.html#property_api_url"><abbr title="PCIT\GitHub\Service\CICommon">CICommon</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<abbr title="Curl\Curl">Curl</abbr> $curl, string $api_url)
+        
+                                            <p>CICommon constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../PCIT/GitHub/Service/CICommon.html#method___construct"><abbr title="PCIT\GitHub\Service\CICommon">CICommon</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_list">list</a>(string $username, string $repo_name, string $state = null, string $head = null, string $base = null, string $sort = null, string $direction = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $username, string $repo_name, int $pr_num)
+        
+                                            <p>Get a single pull request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $username, string $repo_name, int $from_issue, string $title, string $head, string $base, string $body = null, bool $maintainer_can_modify = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_update">update</a>(string $username, string $repo_name, int $from_issue, string $title, string $head, string $base, string $body = null, bool $maintainer_can_modify = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listCommits">listCommits</a>(string $username, string $repo_name, int $pr_num)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listFiles">listFiles</a>(string $username, string $repo_name, int $pr_num)
+        
+                                            <p>List pull requests files.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isMerged">isMerged</a>(string $username, string $repo_name, $pr_num)
+        
+                                            <p>Get if a pull request has been merged.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_merge">merge</a>(string $username, string $repo_name, int $pr_num, string $commit_title, string|null $commit_message, string $sha, int $merge_method)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listReviews">listReviews</a>(string $repo_full_name, int $pull_number)
+        
+                                            <p>List reviews on a pull request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getReview">getReview</a>(string $repo_full_name, int $pull_number, int $review_id)
+        
+                                            <p>Get a single review.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deletePendingReview">deletePendingReview</a>(string $repo_full_name, int $pull_number, int $review_id)
+        
+                                            <p>Delete a pending review.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getCommentsForReview">getCommentsForReview</a>(string $repo_full_name, int $pull_number, int $review_id)
+        
+                                            <p>Get comments for a single review.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createReview">createReview</a>(string $repo_full_name, int $pull_number, string $commit_id, string $body, string $event, array $comments)
+        
+                                            <p>Create a pull request review.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_submitReview">submitReview</a>(string $repo_full_name, int $pull_number, int $review_id, string $body, string $event)
+        
+                                            <p>Submit a pull request review.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dismissReview">dismissReview</a>(string $repo_full_name, int $pull_number, int $review_id, string $message)
+        
+                                            <p>Dismiss a pull request review.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listComments">listComments</a>(string $repo_full_name, int $pull_number, string $sort, string|null $direction, string|null $since)
+        
+                                            <p>List comments on a pull request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ListCommentsInRepository">ListCommentsInRepository</a>(string $repo_full_name, string $sort, string $direction, string $since)
+        
+                                            <p>List comments in a repository.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getComment">getComment</a>(string $repo_full_name, int $comment_id)
+        
+                                            <p>Get a single comment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createComment">createComment</a>(string $repo_full_name, int $pull_number, string $body, string $commit_id, string $path, string $position, int|null $in_reply_to)
+        
+                                            <p>Create a comment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_editComment">editComment</a>(string $repo_full_name, int $comment_id, string $body)
+        
+                                            <p>Edit a comment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteComment">deleteComment</a>(string $repo_full_name, int $comment_id)
+        
+                                            <p>Delete a comment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_listReviewRequests">listReviewRequests</a>(string $repo_full_name, int $pull_number)
+        
+                                            <p>List review requests.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createReviewRequest">createReviewRequest</a>(string $repo_full_name, int $pull_number, array $reviewers, array $team_reviewers)
+        
+                                            <p>Create a review request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteReviewRequest">deleteReviewRequest</a>(string $repo_full_name, int $pull_number, array $reviewers, array $team_reviewers)
+        
+                                            <p>Delete a review request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../PCIT/GitHub/Service/CICommon.html#method___construct"><abbr title="PCIT\GitHub\Service\CICommon">CICommon</abbr></a> at         line 18</div>
+        <code>                    
+    <strong>__construct</strong>(<abbr title="Curl\Curl">Curl</abbr> $curl, string $api_url)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>CICommon constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><abbr title="Curl\Curl">Curl</abbr></td>
+                <td>$curl</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$api_url</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_list">
+        <div class="location">at         line 40</div>
+        <code>                    mixed
+    <strong>list</strong>(string $username, string $repo_name, string $state = null, string $head = null, string $base = null, string $sort = null, string $direction = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$state</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         line 68</div>
+        <code>                    mixed
+    <strong>get</strong>(string $username, string $repo_name, int $pr_num)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a single pull request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pr_num</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         line 82</div>
+        <code>                    mixed
+    <strong>create</strong>(string $username, string $repo_name, int $from_issue, string $title, string $head, string $base, string $body = null, bool $maintainer_can_modify = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$from_issue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$maintainer_can_modify</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_update">
+        <div class="location">at         line 120</div>
+        <code>                    mixed
+    <strong>update</strong>(string $username, string $repo_name, int $from_issue, string $title, string $head, string $base, string $body = null, bool $maintainer_can_modify = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$from_issue</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$head</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$base</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$maintainer_can_modify</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listCommits">
+        <div class="location">at         line 141</div>
+        <code>                    mixed
+    <strong>listCommits</strong>(string $username, string $repo_name, int $pr_num)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pr_num</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listFiles">
+        <div class="location">at         line 155</div>
+        <code>                    mixed
+    <strong>listFiles</strong>(string $username, string $repo_name, int $pr_num)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List pull requests files.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pr_num</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isMerged">
+        <div class="location">at         line 171</div>
+        <code>                    bool
+    <strong>isMerged</strong>(string $username, string $repo_name, $pr_num)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get if a pull request has been merged.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$pr_num</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_merge">
+        <div class="location">at         line 195</div>
+        <code>                    bool|mixed
+    <strong>merge</strong>(string $username, string $repo_name, int $pr_num, string $commit_title, string|null $commit_message, string $sha, int $merge_method)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$repo_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pr_num</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_title</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$commit_message</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sha</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$merge_method</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listReviews">
+        <div class="location">at         line 253</div>
+        <code>                    mixed
+    <strong>listReviews</strong>(string $repo_full_name, int $pull_number)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List reviews on a pull request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getReview">
+        <div class="location">at         line 265</div>
+        <code>                    mixed
+    <strong>getReview</strong>(string $repo_full_name, int $pull_number, int $review_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a single review.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$review_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deletePendingReview">
+        <div class="location">at         line 275</div>
+        <code>                    void
+    <strong>deletePendingReview</strong>(string $repo_full_name, int $pull_number, int $review_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a pending review.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$review_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getCommentsForReview">
+        <div class="location">at         line 287</div>
+        <code>                    mixed
+    <strong>getCommentsForReview</strong>(string $repo_full_name, int $pull_number, int $review_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get comments for a single review.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$review_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createReview">
+        <div class="location">at         line 299</div>
+        <code>                    void
+    <strong>createReview</strong>(string $repo_full_name, int $pull_number, string $commit_id, string $body, string $event, array $comments)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a pull request review.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$comments</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_submitReview">
+        <div class="location">at         line 316</div>
+        <code>                    void
+    <strong>submitReview</strong>(string $repo_full_name, int $pull_number, int $review_id, string $body, string $event)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Submit a pull request review.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$review_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$event</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dismissReview">
+        <div class="location">at         line 331</div>
+        <code>                    void
+    <strong>dismissReview</strong>(string $repo_full_name, int $pull_number, int $review_id, string $message)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dismiss a pull request review.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$review_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listComments">
+        <div class="location">at         line 352</div>
+        <code>                    mixed
+    <strong>listComments</strong>(string $repo_full_name, int $pull_number, string $sort, string|null $direction, string|null $since)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List comments on a pull request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$direction</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string|null</td>
+                <td>$since</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ListCommentsInRepository">
+        <div class="location">at         line 374</div>
+        <code>                    mixed
+    <strong>ListCommentsInRepository</strong>(string $repo_full_name, string $sort, string $direction, string $since)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List comments in a repository.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$sort</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$since</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getComment">
+        <div class="location">at         line 392</div>
+        <code>                    mixed
+    <strong>getComment</strong>(string $repo_full_name, int $comment_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get a single comment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$comment_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createComment">
+        <div class="location">at         line 402</div>
+        <code>                    void
+    <strong>createComment</strong>(string $repo_full_name, int $pull_number, string $body, string $commit_id, string $path, string $position, int|null $in_reply_to)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a comment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commit_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$path</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$position</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int|null</td>
+                <td>$in_reply_to</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_editComment">
+        <div class="location">at         line 426</div>
+        <code>                    void
+    <strong>editComment</strong>(string $repo_full_name, int $comment_id, string $body)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Edit a comment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$comment_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteComment">
+        <div class="location">at         line 441</div>
+        <code>                    void
+    <strong>deleteComment</strong>(string $repo_full_name, int $comment_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a comment.</p>                    <p>204</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$comment_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_listReviewRequests">
+        <div class="location">at         line 451</div>
+        <code>                    void
+    <strong>listReviewRequests</strong>(string $repo_full_name, int $pull_number)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>List review requests.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createReviewRequest">
+        <div class="location">at         line 461</div>
+        <code>                    void
+    <strong>createReviewRequest</strong>(string $repo_full_name, int $pull_number, array $reviewers, array $team_reviewers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a review request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$reviewers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$team_reviewers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteReviewRequest">
+        <div class="location">at         line 476</div>
+        <code>                    void
+    <strong>deleteReviewRequest</strong>(string $repo_full_name, int $pull_number, array $reviewers, array $team_reviewers)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Delete a review request.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$repo_full_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$pull_number</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$reviewers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$team_reviewers</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
